@@ -1,0 +1,1 @@
+window.TUMA_CONFIG = {"supabaseUrl":"https://whppeivnysxqnjhqedue.supabase.co","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndocHBlaXZueXN4cW5qaHFlZHVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzOTcxOTYsImV4cCI6MjEwNjk3MzE5Nn0.HpkWOMxYdM7Mjt9VrAsPNBcHD9_v6UDyvVIdpkmrsSI"};
