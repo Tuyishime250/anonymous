@@ -20,3 +20,6 @@ Desktop.ini
 # Editor settings
 .vscode/
 .idea/
+
+# Supabase CLI local project metadata
+supabase/.temp/

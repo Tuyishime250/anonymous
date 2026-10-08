@@ -7,7 +7,7 @@ A calm, English-language anonymous-message site. Messages are stored in Supabase
 ```text
 Home ── Write your message ── Form ── Safety prompt when relevant ── Confirmation
   ├── Community wall ── Support / anonymous reply / report
-  ├── Get help ── Local emergency guidance and helpline directories
+  ├── Safety prompt ── Local emergency guidance and helpline directories
   ├── Privacy
   └── Moderator access ── Supabase Auth ── Review / approve / delete
 ```
@@ -23,7 +23,7 @@ Home ── Write your message ── Form ── Safety prompt when relevant �
 
 ```text
 HOME (desktop)                  MESSAGE FORM
-┌ Tuma250     Wall Help ... ┐   ┌ ← Back ──────────────────────┐
+┌ Tuma250     Wall Privacy ┐   ┌ ← Back ──────────────────────┐
 │ A little room to breathe  │   │ THIS SPACE IS YOURS          │
 │ Whatever is on your heart │   │ Write what you need to say.  │
 │ you can put it here.      │   │ [ large message field      ] │

@@ -35,7 +35,7 @@ const formError = $("#formError");
 const sendButton = $("#sendButton");
 const translations = {
   en: {
-    navWall: "Community wall", navHelp: "Get help", navPrivacy: "Privacy", navWrite: "Write anonymously",
+    navWall: "Community wall", navPrivacy: "Privacy", navWrite: "Write anonymously",
     themeToggleLabel: "Switch color theme", menuOpen: "Open menu", menuClose: "Close menu", closeLabel: "Close",
     catSchool: "School", catFamily: "Family", catRelationships: "Relationships", catMoney: "Money", catWork: "Work", catHealth: "Health", catOther: "Other",
     heroEyebrow: "A little room to breathe", noteKicker: "A gentle reminder", noteText: "You don’t have<br>to carry it alone.", heroTitle: "Whatever is on your heart, <em>you can put it here.</em>",
@@ -82,7 +82,7 @@ const translations = {
     reviewTitle: "Before anything is public", reviewCopy: "Every message and reply starts private and must be approved by a moderator before it appears on the wall. You can report a public message for another review.",
     limitsTitle: "A note about online services",
     limitsCopy: "The hosting and database providers needed to deliver this site may process technical connection data under their own policies. The app does not save IP addresses in message records. No online service can promise perfect anonymity.",
-    privacyUpdated: "If you need urgent help, please visit the support page. This service is not monitored continuously.",
+    privacyUpdated: "If you need urgent help, contact your local emergency services. This service is not monitored continuously.",
     adminKicker: "MODERATOR SPACE", adminTitle: "Careful words, careful hands.",
     adminIntro: "Sign in with your authorized moderator account to review submissions and reports.",
     emailLabel: "Moderator email", passwordLabel: "Password", adminLogin: "Sign in", adminLogout: "Sign out",
@@ -117,11 +117,7 @@ function applyTranslations() {
   $$("[data-i18n]").forEach((element) => {
     const value = t(element.dataset.i18n);
     if (["heroTitle", "noteText"].includes(element.dataset.i18n)) element.innerHTML = value;
-    else if (element.dataset.i18n === "privacyUpdated") {
-      element.replaceChildren(document.createTextNode("If you need urgent help, please visit the "));
-      const link = document.createElement("a"); link.href = "#help"; link.textContent = t("navHelp"); element.append(link);
-      element.append(document.createTextNode(". This service is not monitored continuously."));
-    } else if (element.dataset.i18n === "helpNote") {
+    else if (element.dataset.i18n === "helpNote") {
       element.replaceChildren(document.createTextNode("Helpline numbers and services vary by country. Choose your country to find a verified local service: "));
       const link = document.createElement("a"); link.href = "https://findahelpline.com/"; link.target = "_blank"; link.rel = "noreferrer"; link.textContent = "findahelpline.com"; element.append(link);
       element.append(document.createTextNode("."));
