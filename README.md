@@ -16,7 +16,7 @@ Home ── Write your message ── Form ── Safety prompt when relevant �
 
 - **Palette:** mist `#F6F8F7`, deep slate `#203D48`, calm teal `#176B67`, pale teal `#E1F1ED`, lavender `#ECE9F7`, white surfaces. Dark mode uses deep blue-green surfaces and a high-contrast mint accent.
 - **Type:** DM Sans for readable UI and Manrope for warm, confident headings, with system fallbacks.
-- **Logo:** a compact teal speech-mark made from three quiet vertical strokes, paired with the Tuma250 wordmark.
+- **Logo:** the Tuma250 brand image in `logo.webp`, used in the site header and footer.
 - **Layout:** generous white space, rounded message cards, visible keyboard focus, reduced-motion support, responsive single-column mobile flow.
 
 ## Wireframes
